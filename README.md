@@ -1,5 +1,5 @@
 # albertmagi.github.io
-The target of this website is to someone who wants to contract a software engineer(it's a ficticius Curriculum Vitae). 
+The target of this website is to someone who wants to contract a software engineer(The work experience is ficticious). 
 
 We have 5 important blocks on the website, first of all the menu on the top and the title with a picture of me and a picture about coding. Secondly we have the other block, that there's who I am and my working experience. 
 The 3rd block it's about my skills(the programming languages I know) and next to it the languages I speak. 

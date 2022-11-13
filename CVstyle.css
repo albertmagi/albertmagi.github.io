@@ -188,13 +188,13 @@ h2{
     width: 90px;
 }
 
-
 .languages{
     margin-top: -8%;
     padding: 8%;
     margin: 5%;
     width: 40%;
     text-align: center;
+    position: relative;
     background-color: rgb(223, 217, 217);
 }
 
@@ -219,10 +219,12 @@ h2{
     width: 60%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin: auto;
 }
 
-.slides{
-    text-align: center;
+.next, .prev{
+    cursor: pointer;
 }
 
 .edu{
