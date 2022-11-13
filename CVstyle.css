@@ -1,0 +1,333 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+img:hover{
+    filter: contrast(170%);
+    transition: all .5s;
+}
+
+.menu{
+    top: 0%;
+    background-color: rgb(6, 6, 139);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu > li{
+    list-style: none;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.menu > li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#title{
+    margin-block: 20px;
+    margin-top: 70px;
+    color: blue(167, 124, 67);
+    background-color: white;
+
+}
+
+.title > h1, .title > h3{
+    text-align: center;
+    background-color: rgb(35, 77, 192);
+    color: rgb(212, 209, 209);
+}
+
+.title > a > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 2%;
+    z-index: -1000;
+}
+
+.title > b > img{
+    width:100%;
+    margin-left: 0%;
+    height: 400px;
+    border-radius: 1%;
+    position: absolute;
+    z-index: -1500;
+}
+
+body{
+    position: relative;
+    color: rgb(62, 152, 255);
+}
+
+h2{
+    color:rgb(35, 77, 192);
+}
+
+h1{
+    font-size: 45px;
+    background-color: white;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.mainContent{
+    margin-top: 300px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+.group1{
+    display: flex;
+}
+
+.me{
+    margin-top: -8%;
+    padding: 8%;
+    margin: 5%;
+    width: 40%;
+    background-color: rgb(223, 217, 217);
+}
+
+.me > h2{
+    text-align: center;
+}
+
+.whoiam{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#myText{
+    width: 200px;
+    height: 265px;
+    color: rgb(62, 152, 255);
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 50%;
+}
+
+.me > div > a > img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.work{
+    margin-top: -8%;
+    padding: 8%;
+    margin: 5%;
+    width: 40%;
+    right: 20px;
+    background-color: white;
+}
+
+.workList > li{
+    list-style:square;
+}
+
+.group2{
+    display: flex;
+}
+
+.skills{
+    margin-top: -8%;
+    padding: 8%;
+    margin: 5%;
+    background-color: white;
+    width: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills > h2{
+    text-align: center;
+}
+
+.division{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.division > div > li > a > img{
+    height: 100px;
+    width: 90px;
+}
+
+
+
+.languages{
+    margin-top: -8%;
+    padding: 8%;
+    margin: 5%;
+    width: 40%;
+    text-align: center;
+    background-color: rgb(223, 217, 217);
+}
+
+.languages > h3{
+    background-color: rgb(223, 217, 217);
+}
+
+.education{
+    background-color: white;
+    margin: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.slideContainer{
+    display: flex;
+}
+
+.edu{
+    background-color: white;
+    color: black;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.contact{
+    background-color: rgb(223, 217, 217);
+    height: 175px;
+    text-align: center;
+}
+
+.contactInfo{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gmail{
+    display: flex;
+    width: 30%;
+}
+
+.gmail > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+.phoneNumber{
+    display: flex;
+    width: 20%;
+}
+
+.phoneNumber > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+.adress{
+    display: flex;
+    width: 20%;
+}
+
+.adress > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+.linkedin{
+    display: flex;
+    width: 20%;
+}
+
+.linkedin > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+.contact > div{
+    list-style-type: none;    
+    text-align: left;
+}
+
+@media only screen and (max-width: 1310px){
+    /* Posar aquí lo de Who I am, també n'haurem de fer un altre per fer la foto més petita i
+    pels grups i tot això que es posin amb fles-direction: column*/
+    .me{
+        height: 300px;
+        align-items: center;
+    }
+    .whoiam{
+        flex-direction: column;
+    }
+    .img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    /* Posar aquí lo de Who I am, també n'haurem de fer un altre per fer la foto més petita i
+    pels grups i tot això que es posin amb fles-direction: column*/
+    .me{
+        height: 350px;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .contact{
+        height: 400px;
+    }
+    .contactInfo{
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 656px){
+    /* Posar aquí lo de Who I am, també n'haurem de fer un altre per fer la foto més petita i
+    pels grups i tot això que es posin amb fles-direction: column*/
+    .languages{
+        width: 35%;
+    }
+    .group2{
+        justify-content: space-between;
+    }
+}

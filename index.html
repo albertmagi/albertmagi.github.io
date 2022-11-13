@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Albert Martinez Gispert</title>
+        <link rel="stylesheet" href="CVstyle.css"> 
+    </head>
+    <body>
+        <header>
+            <menu class="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#me">Who I am?</a></li>
+                <li><a href="#work">Work experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </menu>
+           <section id = "title" class="title">
+                <h1>Albert Martinez Gispert</h1>
+                <h3>Computer science student</h3>
+                <a><img src="photos/jo2.jpg"></a>
+                <b><img src="photos/programming.jpg"></b>
+           </section>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="mainContent">
+
+            <div class="group1">
+                <section class="me" id="me">
+                    <h2>Who I am?</h2>
+                    <br>
+                    <div class="whoiam">
+                        <a id="myText">
+                            <br>
+                            I'm Albert Martínez Gispert, a Senior software and web developer with strong aspirations. I have 20 years old and I live in Monells, Catalunya, Spain.
+                            I like a lot the technology and cars. On my free-time I love watching movies, take a walk with my dog, learn more about new technologies, 
+                            play video games or simply go for a ride with my car.
+                        </a>
+                        <br> 
+                        <br>
+                        <a id="myImg" class="img"><img src="photos/jo.jpg"></a>
+                    </div>
+                </section>
+                
+                <section id="work" class="work">
+                    <h2>Working experience</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="workList">
+                        <li>Junior devOps engineer - Apple(2013-2015)</li>
+                        <br>
+                        <li>Junior software developer - Facebook(2015-2017)</li>
+                        <br>
+                        <li>Mid-level software developer - Google(2017-2020)</li>
+                        <br>
+                        <li>Senior developer - Amazon(Current)</li>
+                    </div>
+                </section>
+            </div>
+
+            <div class="group2">
+                <section class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <br>
+                    <br>
+                        <div class="division">
+                            <div class="s1">
+                                <li class="c">
+                                    <a><img src="photos/c++.png"></a>
+                                </li>
+                                <li class="java">
+                                    <a><img src="photos/java.png"></a>
+                                </li>
+                            </div>
+                            <div class="s2">
+                                <li class="html">
+                                    <a><img src="photos/html.png"></a>
+                                </li>
+                                <li class="sql">
+                                    <a><img src="photos/sql.png"></a>
+                                </li>
+                            </div>
+                            <div class="s3">
+                                <li class="javascript">
+                                    <a><img src="photos/javasscript.png"></a>
+                                </li>
+                                <li class="css">
+                                    <a><img src="photos/css.png"></a>
+                                </li>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="languages" id="languages">
+                    <h2>Languages</h2>
+                    <br>
+                    <div class="catala">
+                        <h3>Català:</h3>
+                        <a> Native</a>
+                    </div>
+                    <div class="castellano">
+                        <h3>Castellano:</h3>
+                        <a> Native</a>
+                    </div>
+                    <div class="english">
+                        <h3>English:</h3>
+                        <a> Medium-High level(B2)</a>
+                    </div>
+                </section>
+            </div>
+        
+            <section class="education" id="education">
+                <h2>Education</h2>
+                <br>
+                <div class="slideContainer">
+                    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                    <div class="slides">
+                        <div class="edu">
+                            <a>Cor de Maria la Bisbal. 2004-2018</a>
+                        </div>
+                        <div class="edu">
+                            <a>Institut de la Bisbal d'Empordà. 2018-2020</a>
+                        </div>
+                        <div class="edu">
+                            <a>Universitat de Girona. Grau en enginyeria informàtica. 2020-2024</a>
+                        </div>
+                    </div>
+                    <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                </div>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <script src="script.js" type="text/javascript">
+                    showSlides(1);
+                </script>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contact me</h2>
+                <div class="contactInfo">
+                    <div class="gmail">
+                        <img src="photos/gmail.png">
+                        <li>: martinezgispert2002@gmail.com</li> 
+                    </div>
+                    <div class="phoneNumber">
+                        <img src="photos/telf.png">
+                        <li>: +34 634 88 15 98</li> 
+                    </div>
+                    <div class="adress">
+                        <img src="photos/house.png">
+                        <li>: <a href="https://www.google.es/maps/place/Carrer+Joan+de+Llovet,+19,+17121+Monells,+Girona/@41.9771243,2.9969142,17z/data=!3m1!4b1!4m5!3m4!1s0x12bafbeb1e7c9459:0x57ab4dc10f50812e!8m2!3d41.9771243!4d2.9991029?hl=es">Carrer Joan de llovet Nº19</a></li> 
+                    </div>
+                    <div class="linkedin">
+                        <img src="photos/linkedin.png">
+                        <li>: <a href="https://es.linkedin.com/in/albert-mart%C3%ADnez-gispert-753496249?original_referer=https%3A%2F%2Fwww.google.com%2F">Albert Martínez Gispert</a></li> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
