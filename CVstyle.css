@@ -1,7 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Sans serif';
+    font-family: sans-serif;
 }
 
 img:hover{
@@ -68,6 +68,12 @@ img:hover{
     border-radius: 1%;
     position: absolute;
     z-index: -1500;
+}
+
+.separation1{
+    background-color: rgb(35, 77, 192);
+    width: 100%;
+    height: 8px;
 }
 
 body{
@@ -147,6 +153,13 @@ h2{
     list-style:square;
 }
 
+.separation2{
+    background-color: rgb(35, 77, 192);
+    width: 75%;
+    height: 5px;
+    float: right;
+}
+
 .group2{
     display: flex;
 }
@@ -176,7 +189,6 @@ h2{
 }
 
 
-
 .languages{
     margin-top: -8%;
     padding: 8%;
@@ -190,8 +202,15 @@ h2{
     background-color: rgb(223, 217, 217);
 }
 
+.separation3{
+    background-color: rgb(35, 77, 192);
+    width: 75%;
+    height: 5px;
+}
+
 .education{
     background-color: white;
+    top: 10px;
     margin: 40px;
     align-items: center;
     text-align: center;
@@ -222,6 +241,12 @@ h2{
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+.separation4{
+    background-color: rgb(35, 77, 192);
+    width: 100%;
+    height: 5px;
 }
 
 .contact{
