@@ -224,7 +224,13 @@ h2{
 }
 
 .next, .prev{
+    color: white;
     cursor: pointer;
+    background-color: rgb(62, 152, 255);
+}
+
+.next:hover, .prev:hover{
+    background-color: rgb(35, 77, 192);
 }
 
 .edu{
