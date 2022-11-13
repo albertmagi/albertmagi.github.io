@@ -212,21 +212,24 @@ h2{
     background-color: white;
     top: 10px;
     margin: 40px;
-    align-items: center;
     text-align: center;
 }
 
 .slideContainer{
+    width: 60%;
     display: flex;
+    justify-content: space-between;
+}
+
+.slides{
+    text-align: center;
 }
 
 .edu{
+    width: 20%;
     background-color: white;
     color: black;
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
 }
 
 .dot {
