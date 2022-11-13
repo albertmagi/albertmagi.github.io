@@ -335,6 +335,12 @@ h2{
     .img{
         display: none;
     }
+    .prev, .next{
+        height: 22px;
+    }
+    .slides{
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width: 900px){
