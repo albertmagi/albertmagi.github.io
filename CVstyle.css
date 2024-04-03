@@ -1,7 +1,11 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img:hover{
@@ -41,14 +45,11 @@ img:hover{
     margin-block: 20px;
     margin-top: 70px;
     color: blue(167, 124, 67);
-    background-color: white;
 
 }
 
 .title > h1, .title > h3{
     text-align: center;
-    background-color: rgb(35, 77, 192);
-    color: rgb(212, 209, 209);
 }
 
 .title > a > img{
@@ -70,24 +71,12 @@ img:hover{
     z-index: -1500;
 }
 
-.separation1{
-    background-color: rgb(35, 77, 192);
-    width: 100%;
-    height: 8px;
-}
-
 body{
     position: relative;
-    color: rgb(62, 152, 255);
-}
-
-h2{
-    color:rgb(35, 77, 192);
 }
 
 h1{
     font-size: 45px;
-    background-color: white;
 }
 
 h3{
@@ -107,8 +96,6 @@ h2{
 }
 
 .me{
-    margin-top: -8%;
-    padding: 8%;
     margin: 5%;
     width: 40%;
     background-color: rgb(223, 217, 217);
@@ -127,7 +114,6 @@ h2{
 #myText{
     width: 200px;
     height: 265px;
-    color: rgb(62, 152, 255);
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
@@ -141,8 +127,6 @@ h2{
 }
 
 .work{
-    margin-top: -8%;
-    padding: 8%;
     margin: 5%;
     width: 40%;
     right: 20px;
@@ -153,24 +137,14 @@ h2{
     list-style:square;
 }
 
-.separation2{
-    background-color: rgb(35, 77, 192);
-    width: 75%;
-    height: 5px;
-    float: right;
-}
-
 .group2{
     display: flex;
 }
 
 .skills{
-    margin-top: -8%;
-    padding: 8%;
     margin: 5%;
     background-color: white;
     width: 40%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skills > h2{
@@ -189,12 +163,9 @@ h2{
 }
 
 .languages{
-    margin-top: -8%;
-    padding: 8%;
     margin: 5%;
     width: 40%;
     text-align: center;
-    position: relative;
     background-color: rgb(223, 217, 217);
 }
 
@@ -202,43 +173,32 @@ h2{
     background-color: rgb(223, 217, 217);
 }
 
-.separation3{
-    background-color: rgb(35, 77, 192);
-    width: 75%;
-    height: 5px;
-}
-
-.education{
-    background-color: white;
-    top: 10px;
-    margin: 40px;
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    align-items: center;
     text-align: center;
 }
 
 .slideContainer{
-    width: 30%;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: auto;
-}
-
-.next, .prev{
-    color: white;
-    cursor: pointer;
-    background-color: rgb(62, 152, 255);
-    width: 5%;
-}
-
-.next:hover, .prev:hover{
-    background-color: rgb(35, 77, 192);
+    width: 290px;
+    align-items: center;
+    justify-content: center;
 }
 
 .edu{
-    width: 30%;
     background-color: white;
     color: black;
-    position: absolute;
+    width: 50%;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dot {
@@ -249,16 +209,14 @@ h2{
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-  }
+}
+
+.next, .prev {
+    cursor: pointer;
+}
 
 .active, .dot:hover {
     background-color: #717171;
-}
-
-.separation4{
-    background-color: rgb(35, 77, 192);
-    width: 100%;
-    height: 5px;
 }
 
 .contact{
@@ -326,19 +284,14 @@ h2{
     /* Posar aquí lo de Who I am, també n'haurem de fer un altre per fer la foto més petita i
     pels grups i tot això que es posin amb fles-direction: column*/
     .me{
-        height: 300px;
+        height: 750px;
         align-items: center;
     }
     .whoiam{
         flex-direction: column;
     }
     .img{
-        display: none;
-    }
-    .prev, .next{
-        height: 22px;
-    }
-    .slides{
+        width: 100px;
         height: 100px;
     }
 }
@@ -349,6 +302,9 @@ h2{
     .me{
         height: 350px;
         align-items: center;
+    }
+    .img{
+        display: none;
     }
 }
 
@@ -374,4 +330,34 @@ h2{
     .group2{
         justify-content: space-between;
     }
+}
+   
+.blauFosc {
+    color: #001540;
+}
+
+.fonsBlauFosc {
+    background-color: #001540;
+    color: #FAF0DC;
+}
+
+.blanc{
+    color: #FAF0DC;
+}
+
+.blauClar {
+    color: #5278D2;
+}
+
+.fonsBlauClar {
+    background-color: #5278D2;
+    color: #001540;
+}
+
+.itemsAligned {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
