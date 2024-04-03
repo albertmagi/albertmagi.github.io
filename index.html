@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://kit.fontawesome.com/f8396e07fb.js" crossorigin="anonymous"></script>
     <head>
         <title>CV Albert Martinez Gispert</title>
         <link rel="stylesheet" href="CVstyle.css"> 
     </head>
-    <body>
+    <body class="blauClar">
         <header>
-            <menu class="menu">
+            <menu class="menu fonsBlauFosc">
                 <li><a href="#top">Home</a></li>
                 <li><a href="#me">Who I am?</a></li>
                 <li><a href="#work">Work experience</a></li>
@@ -15,8 +16,8 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </menu>
-           <section id = "title" class="title">
-                <h1>Albert Martinez Gispert</h1>
+           <section id = "title" class="title fonsBlauClar">
+                <h1 class="blau">Albert Martinez Gispert</h1>
                 <h3>Computer science student</h3>
                 <a><img src="photos/jo2.jpg"></a>
                 <b><img src="photos/programming.jpg"></b>
@@ -28,19 +29,16 @@
         <br>
         <div class="mainContent">
 
-            <div class="separation1"></div>
-            <br>
-
             <div class="group1">
                 <section class="me" id="me">
-                    <h2>Who I am?</h2>
+                    <h2 class="blauFosc">Who I am?</h2>
                     <br>
                     <div class="whoiam">
-                        <a id="myText">
+                        <a class="blauClar" id="myText">
                             <br>
-                            I'm Albert Martínez Gispert, a Senior software and web developer with strong aspirations. I have 20 years old and I live in Monells, Catalunya, Spain.
-                            I like a lot the technology and cars. On my free-time I love watching movies, take a walk with my dog, learn more about new technologies, 
-                            play video games or simply go for a ride with my car.
+                            I'm Albert Martínez Gispert, a Junior software and web developer with strong aspirations. I have 22 years old and I live in Monells, Catalunya, Spain.
+                            I like technology and cars. On my free-time I love watching movies, take a walk with my dog, learn more about new innovations in the tech world, 
+                            play video games and hiking.
                         </a>
                         <br> 
                         <br>
@@ -49,29 +47,20 @@
                 </section>
                 
                 <section id="work" class="work">
-                    <h2>Working experience</h2>
+                    <h2 class="blauFosc">Working experience</h2>
                     <br>
                     <br>
                     <br>
                     <div class="workList">
-                        <li>Junior devOps engineer - Apple(2013-2015)</li>
+                        <li>Software engineer intern - InformatiK (2023-2024)</li>
                         <br>
-                        <li>Junior software developer - Facebook(2015-2017)</li>
-                        <br>
-                        <li>Mid-level software developer - Google(2017-2020)</li>
-                        <br>
-                        <li>Senior developer - Amazon(Current)</li>
                     </div>
                 </section>
             </div>
 
-            <div class="separation2"></div>
-            <br>
-            <br>
-
             <div class="group2">
                 <section class="skills" id="skills">
-                    <h2>Skills</h2>
+                    <h2 class="blauFosc">Skills</h2>
                     <br>
                     <br>
                         <div class="division">
@@ -103,7 +92,7 @@
                 </section>
 
                 <section class="languages" id="languages">
-                    <h2>Languages</h2>
+                    <h2 class="blauFosc">Languages</h2>
                     <br>
                     <div class="catala">
                         <h3>Català:</h3>
@@ -115,71 +104,60 @@
                     </div>
                     <div class="english">
                         <h3>English:</h3>
-                        <a> Medium-High level(B2)</a>
+                        <a> Medium-High level (B2)</a>
                     </div>
                 </section>
             </div>
-
-            <div class="separation3"></div>
-            <br>
-            <br>
-
-            <section class="education" id="education">
-                <h2>Education</h2>
+        
+            <div class="education" id="education">
+                <h2 class="blauFosc">Education</h2>
                 <br>
-                <br>
-                <br>
-                <div class="slideContainer" style="text-align: center";>
-                    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                <div class="slideContainer">
+                    <a class="prev" onclick="nextSlide(-1)"><i class="fa-solid fa-caret-left fa-2x"></i></a>
                     <div class="slides">
                         <div class="edu">
-                            <a>Cor de Maria la Bisbal. (2004-2018)</a>
+                            <a>Cor de Maria la Bisbal. 2004-2018</a>
                         </div>
-                        <div class="edu">
-                            <a>Institut de la Bisbal d'Empordà. (2018-2020)</a>
+                        <div class="edu" style="display: none;">
+                            <a>Institut la Bisbal d'Empordà. Batxillerat tecnològic. 2018-2020</a>
                         </div>
-                        <div class="edu">
-                            <a>Universitat de Girona. Grau en enginyeria informàtica. (2020-2024)</a>
+                        <div class="edu" style="display: none;">
+                            <a>Universitat de Girona. Grau en enginyeria informàtica. 2020-2025</a>
                         </div>
                     </div>
-                    <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                    <a class="next" onclick="nextSlide(1)"><i class="fa-solid fa-caret-right fa-2x"></i></a>
                 </div>
 
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
 
-                <div>
-                    <span class="dot" onclick="currentSlide(1)"></span>
+                <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
                 <script src="script.js" type="text/javascript">
                     showSlides(1);
                 </script>
-            </section>
+            </div>
 
-            <div class="separation4"></div>
             <section class="contact" id="contact">
-                <h2>Contact me</h2>
+                <h2 class="blauFosc">Contact me</h2>
                 <div class="contactInfo">
-                    <div class="gmail">
-                        <img src="photos/gmail.png">
-                        <li>: martinezgispert2002@gmail.com</li> 
+                    <div class="gmail itemsAligned">
+                        <i class="fa-solid fa-envelope fa-2x blauFosc"></i>
+                        <li> martinezgispert2002@gmail.com</li> 
                     </div>
-                    <div class="phoneNumber">
-                        <img src="photos/telf.png">
-                        <li>: +34 634 88 15 98</li> 
+                    <div class="phoneNumber itemsAligned">
+                        <i class="fa-solid fa-phone fa-2x blauFosc"></i>
+                        <li> +34 634 88 15 98</li> 
                     </div>
-                    <div class="adress">
-                        <img src="photos/house.png">
-                        <li>: <a href="https://www.google.es/maps/place/Carrer+Joan+de+Llovet,+19,+17121+Monells,+Girona/@41.9771243,2.9969142,17z/data=!3m1!4b1!4m5!3m4!1s0x12bafbeb1e7c9459:0x57ab4dc10f50812e!8m2!3d41.9771243!4d2.9991029?hl=es">Carrer Joan de llovet Nº19</a></li> 
+                    <div class="adress itemsAligned">
+                        <i class="fa-solid fa-house fa-2x blauFosc"></i>
+                        <li> <a href="https://www.google.es/maps/place/Carrer+Joan+de+Llovet,+19,+17121+Monells,+Girona/@41.9771243,2.9969142,17z/data=!3m1!4b1!4m5!3m4!1s0x12bafbeb1e7c9459:0x57ab4dc10f50812e!8m2!3d41.9771243!4d2.9991029?hl=es">Carrer Joan de llovet Nº19</a></li> 
                     </div>
-                    <div class="linkedin">
-                        <img src="photos/linkedin.png">
-                        <li>: <a href="https://es.linkedin.com/in/albert-mart%C3%ADnez-gispert-753496249?original_referer=https%3A%2F%2Fwww.google.com%2F">Albert Martínez Gispert</a></li> 
+                    <div class="linkedin itemsAligned">
+                        <i class="fa-brands fa-linkedin fa-2x blauFosc"></i>
+                        <li> <a href="https://es.linkedin.com/in/albert-mart%C3%ADnez-gispert-753496249?original_referer=https%3A%2F%2Fwww.google.com%2F">Albert Martínez Gispert</a></li> 
                     </div>
                 </div>
             </section>
